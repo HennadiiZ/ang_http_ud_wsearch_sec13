@@ -8,13 +8,17 @@ import { WikipediaService } from './wikipedia.service';
 })
 export class AppComponent {
 
+  // @Input() 
+  pages!:any;
+
   constructor(
     private wikipediaService: WikipediaService
   ){}
 
-  onTerm(term: any){
-    this.wikipediaService.search(term).subscribe((res)=>{
+  onTerm(term: string){
+    this.wikipediaService.search(term).subscribe((res: any) =>{
       console.log(res)
+      this.pages = res.query.search;
     });
   }
 
@@ -32,5 +36,5 @@ export class AppComponent {
             // 180. Making HTTP Requests
             // https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&utf8=1&srsearch=space
             // 181. Seeing the Request's Response
-            //
+            // 182. More Parent to Child Communication
 }
