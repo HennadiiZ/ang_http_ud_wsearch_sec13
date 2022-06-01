@@ -1,9 +1,9 @@
 <div class="box">
 <div [innerHTML]="xss"></div>
-<span *ngIf="pages" style="background: rgb(210, 218, 98)">length:{{ pages?.length }}</span>
+<span style="background: rgb(210, 218, 98)">length:{{ pages?.length }}</span>
 
 <table class="table is-stripped">
-    <thead *ngIf="pages">
+    <thead>
         <tr>
             <th>Title</th>
             <th>Word Count</th>
