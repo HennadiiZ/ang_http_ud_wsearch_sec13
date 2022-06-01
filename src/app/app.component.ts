@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  
+
+  //Section 13: Handling Data and HTTP Requests
+  // SearchBar + PageList components + wikipedia service
 }
