@@ -8,7 +8,9 @@ import { WikipediaService } from './wikipedia.service';
 })
 export class AppComponent {
 
-  constructor(private wikipediaService: WikipediaService){}
+  constructor(
+    private wikipediaService: WikipediaService
+  ){}
 
   onTerm(term: any){
       const res = this.wikipediaService.search(term)
@@ -25,4 +27,7 @@ export class AppComponent {
             // list=search&
             // utf8=1&
             //srsearch=space
+
+            // 180. Making HTTP Requests
+            // https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&utf8=1&srsearch=space
 }
