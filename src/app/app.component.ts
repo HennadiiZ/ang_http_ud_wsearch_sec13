@@ -38,4 +38,9 @@ export class AppComponent {
             // 181. Seeing the Request's Response
             // 182. More Parent to Child Communication
             // 183. Building the Table
+
+  // ====== // Section 14: App Security in Angular
+            // 184. Escaping HTML Characters
+            // 185. XSS Attacks
+            // 186. More on XSS Attacks
 }

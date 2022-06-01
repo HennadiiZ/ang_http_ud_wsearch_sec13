@@ -1,5 +1,5 @@
-
-<div *ngIf="pages">length:::{{ pages?.length }}</div>
+<div [innerHTML]="xss"></div>
+<span *ngIf="pages" style="background: rgb(210, 218, 98)">length:{{ pages?.length }}</span>
 
 <table class="table is-stripped">
     <thead>
@@ -17,8 +17,10 @@
             <td>
                 {{ page.wordcount }}
             </td>
-            <td>
+            <!-- <td>
                 {{ page.snippet }}
+            </td> -->
+            <td [innerHTML]="page.snippet">
             </td>
         </tr>
     </tbody>
