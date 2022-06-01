@@ -12,7 +12,11 @@
     <tbody>
         <tr *ngFor="let page of pages">
             <td>
-                {{ page.title }}
+                <a 
+                [href]=" 'https://en.wikipedia.org?curid=' + page.pageid" 
+                target="_blank">
+                    {{ page.title }}
+                </a>
             </td>
             <td>
                 {{ page.wordcount }}
