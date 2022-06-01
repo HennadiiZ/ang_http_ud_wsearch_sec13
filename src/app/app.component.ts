@@ -13,8 +13,9 @@ export class AppComponent {
   ){}
 
   onTerm(term: any){
-      const res = this.wikipediaService.search(term)
+    this.wikipediaService.search(term).subscribe((res)=>{
       console.log(res)
+    });
   }
 
   //Section 13: Handling Data and HTTP Requests
@@ -30,4 +31,6 @@ export class AppComponent {
 
             // 180. Making HTTP Requests
             // https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&utf8=1&srsearch=space
+            // 181. Seeing the Request's Response
+            //
 }
