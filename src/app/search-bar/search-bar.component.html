@@ -1,2 +1,13 @@
 <!-- <input placeholder="Search..." (input)="onInput($event.target.value)"> by him -->
-<input placeholder="Search..." (input)="onInput($event.target)">
+
+<form (submit)="onFormSubmit($event)">
+    <input placeholder="Search..." (input)="onInput($event.target)"> 
+</form>
+
+
+
+
+<!-- 
+    <input placeholder="Search..." (input)="term = $event?.target?.value"> 
+    another his way^ but not working...
+-->
