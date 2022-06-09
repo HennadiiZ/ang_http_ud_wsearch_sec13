@@ -46,4 +46,9 @@ export class AppComponent {
 
             // 187. Adding Title Links
             // 188. Another CSS Gotcha
+
+  // ====== // Section 15: RxJs From the Fundamentals
+            // 192. Adding RxJs Terminology
+            // 193. Creating an Observable
+            // 
 }
