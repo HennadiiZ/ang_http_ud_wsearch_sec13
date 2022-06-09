@@ -2,12 +2,17 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-// const observable = new Observable<number>(observer =>{
-//   observer.next(1);
-// });
-// observable.subscribe(value =>{
-//   console.log(value);
-// })
+interface Car {
+  year: number;
+  color: string;
+  running: boolean;
+  make: {
+    name: string;
+    dateCreated: number;
+  }
+}
+
+
 
 @Injectable({
   providedIn: 'root'
