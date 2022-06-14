@@ -12,7 +12,22 @@ interface Car {
   }
 }
 
-
+//
+const observable = new Observable<Car>(observer =>{
+   observer.next({
+    year: 2000,
+    color: "red",
+    running: true,
+    make: {
+      name: "Toyota",
+      dateCreated: 2000
+    }
+   });
+ });
+ observable.subscribe(value =>{
+   console.log(value);
+ })
+ //
 
 @Injectable({
   providedIn: 'root'
