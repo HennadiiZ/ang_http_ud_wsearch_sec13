@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, pluck } from 'rxjs';
 
 interface Car {
   year: number;
@@ -19,12 +19,12 @@ const observable = new Observable<Car>(observer =>{
     color: "red",
     running: true,
     make: {
-      name: "Toyota",
-      dateCreated: 2000
+      name: "Chevy",
+      dateCreated: 1950
     }
    });
  }).pipe(
-   
+   pluck('make', 'name')
  )
 
 
