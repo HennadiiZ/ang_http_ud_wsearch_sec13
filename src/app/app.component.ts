@@ -8,7 +8,7 @@ import { WikipediaService } from './wikipedia.service';
 })
 export class AppComponent {
 
-  // @Input() 
+  // @Input()
   pages!:any;
 
   constructor(
@@ -18,7 +18,8 @@ export class AppComponent {
   onTerm(term: string){
     this.wikipediaService.search(term).subscribe((res: any) =>{
       console.log(res)
-      this.pages = res.query.search;
+      // this.pages = res.query.search;
+      this.pages = res;
     });
   }
 
@@ -50,5 +51,6 @@ export class AppComponent {
   // ====== // Section 15: RxJs From the Fundamentals
             // 192. Adding RxJs Terminology
             // 193. Creating an Observable
-            // 
+            //
+            // 209. Using TypeScript to Catch Errors
 }
