@@ -24,7 +24,8 @@ const observable = new Observable<Car>(observer =>{
     }
    });
  }).pipe(
-   pluck('make', 'name')
+  //  pluck('make', 'name')
+  pluck('make', 'dateCreated')
  )
 
 
