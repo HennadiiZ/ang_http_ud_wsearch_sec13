@@ -16,7 +16,7 @@ export class AppComponent {
   ){}
 
   onTerm(term: string){
-    this.wikipediaService.search(term).subscribe((res: any) =>{
+    this.wikipediaService.search(term).subscribe((res) =>{
       console.log(res)
       // this.pages = res.query.search;
       this.pages = res;
@@ -53,4 +53,5 @@ export class AppComponent {
             // 193. Creating an Observable
             //
             // 209. Using TypeScript to Catch Errors
+            // 210. TypeScript is Smart
 }
