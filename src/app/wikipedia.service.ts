@@ -23,7 +23,11 @@ const observable = new Observable<Car>(observer =>{
       dateCreated: 2000
     }
    });
- });
+ }).pipe(
+   
+ )
+
+
  observable.subscribe(value =>{
    console.log(value);
  })
